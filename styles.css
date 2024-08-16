@@ -45,15 +45,9 @@
     color: yellow; /* Màu chữ khi liên kết đang được nhấp */
 }
 
-.separator {
-    color: white; /* Màu của dấu phân cách */
-    padding: 0 10px; /* Khoảng cách giữa các liên kết */
-    font-family: 'Bahnschrift Light', sans-serif;
-}
-
 h1 {
     font-family: 'Bahnschrift', sans-serif;
-    background-color: black; /* Màu đen cho nền */
+    background-color: #0A3161; /* Màu đen cho nền */
     color: white; /* Màu trắng cho chữ */
     padding: 20px;
     border-radius: 5px; /* Optional: làm tròn góc của div */
