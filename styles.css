@@ -18,6 +18,8 @@
     overflow: hidden;
     padding: 2px 0;
     border-radius: 5px; /* Optional: làm tròn góc của div */
+    width: 100%; /* Đảm bảo navbar kéo dài toàn bộ chiều rộng */
+    box-sizing: border-box; /* Bao gồm padding và border vào chiều rộng */
 }
 
 .navbar a {
@@ -50,6 +52,8 @@ h1 {
     color: white; /* Màu trắng cho chữ */
     padding: 20px;
     border-radius: 5px; /* Optional: làm tròn góc của div */
+    width: 100%; /* Đảm bảo h1 kéo dài toàn bộ chiều rộng */
+    box-sizing: border-box; /* Bao gồm padding và border vào chiều rộng */
 }
 
 h2, h3, h4, h5, h6 {
@@ -58,12 +62,15 @@ h2, h3, h4, h5, h6 {
 
 div {
     font-family: 'Bahnschrift Light', sans-serif;
-    max-width: 500px;
+    width: 100%; /* Đảm bảo div kéo dài toàn bộ chiều rộng */
+    max-width: 500px; /* Kích thước tối đa của div */
     background-color: #D3D3D3; /* Màu xám nhạt */
     color: black; /* Màu chữ để có sự tương phản tốt với nền */
     padding: 20px; /* Padding để tạo khoảng cách giữa nội dung và viền của div */
     border-radius: 5px; /* Optional: làm tròn góc của div */
+    box-sizing: border-box; /* Bao gồm padding và border vào chiều rộng */
 }
+
 img {
     display: block; /* Để loại bỏ khoảng trống bên dưới hình ảnh */
     margin: 0 auto; /* Căn giữa hình ảnh */
