@@ -30,8 +30,16 @@
 }
 
 .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #ddd; /* Màu nền khi di chuột qua */
+    color: black; /* Màu chữ khi di chuột qua */
+}
+
+.navbar a:visited {
+    color: white; /* Màu chữ của liên kết đã được truy cập */
+}
+
+.navbar a:active {
+    color: yellow; /* Màu chữ khi liên kết đang được nhấp */
 }
 
 h1 {
