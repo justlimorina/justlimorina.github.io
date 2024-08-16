@@ -58,7 +58,7 @@ h2, h3, h4, h5, h6 {
 
 div {
     font-family: 'Bahnschrift Light', sans-serif;
-    width: 500px;
+    max-width: 500px;
     background-color: #D3D3D3; /* Màu xám nhạt */
     color: black; /* Màu chữ để có sự tương phản tốt với nền */
     padding: 20px; /* Padding để tạo khoảng cách giữa nội dung và viền của div */
