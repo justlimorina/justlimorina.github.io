@@ -72,7 +72,6 @@ div {
 }
 
 img {
-    display: block; /* Để loại bỏ khoảng trống bên dưới hình ảnh */
     margin: 0 auto; /* Căn giữa hình ảnh */
     max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử chứa */
 }
