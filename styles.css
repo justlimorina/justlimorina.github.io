@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Bahnschrift';
+    src: local('Bahnschrift');
+}
+
+@font-face {
+    font-family: 'Bahnschrift Light';
+    src: local('Bahnschrift Light');
+}
+
+@font-face {
+    font-family: 'Bahnschrift SemiBold';
+    src: local('Bahnschrift SemiBold');
+}
+
+h1 {
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Bahnschrift SemiBold', sans-serif;
+}
+
+div {
+    font-family: 'Bahnschrift Light', sans-serif;
+}
