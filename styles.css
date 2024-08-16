@@ -69,6 +69,9 @@ div {
     padding: 20px; /* Padding để tạo khoảng cách giữa nội dung và viền của div */
     border-radius: 5px; /* Optional: làm tròn góc của div */
     box-sizing: border-box; /* Bao gồm padding và border vào chiều rộng */
+    background-size: cover; /* Kích thước hình nền để bao phủ toàn bộ phần tử */
+    background-position: center; /* Căn giữa hình nền trong phần tử */
+    background-repeat: no-repeat; /* Ngăn không cho hình nền lặp lại */
 }
 
 img {
