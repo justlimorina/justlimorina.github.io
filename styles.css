@@ -57,3 +57,8 @@ h2, h3, h4, h5, h6 {
 div {
     font-family: 'Bahnschrift Light', sans-serif;
 }
+img {
+    display: block; /* Để loại bỏ khoảng trống bên dưới hình ảnh */
+    margin: 0 auto; /* Căn giữa hình ảnh */
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử chứa */
+}
