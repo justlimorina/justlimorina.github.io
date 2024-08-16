@@ -68,7 +68,7 @@ h2, h3, h4, h5, h6 {
 
 div {
     font-family: 'Bahnschrift Light', sans-serif;
-    width: 100%; /* Đảm bảo div kéo dài toàn bộ chiều rộng */
+    width: 500px; /* Đảm bảo div kéo dài toàn bộ chiều rộng */
     max-width: 500px; /* Kích thước tối đa của div */
     background-color: #D3D3D3; /* Màu xám nhạt */
     color: black; /* Màu chữ để có sự tương phản tốt với nền */
