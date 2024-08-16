@@ -16,6 +16,9 @@
 h1 {
     font-family: 'Bahnschrift', sans-serif;
     text-align: center;
+    background-color: #B22234;
+    color: white; /* Optional: Set text color to white for better contrast */
+    padding: 10px; /* Optional: Add padding for better appearance */
 }
 
 h2, h3, h4, h5, h6 {
