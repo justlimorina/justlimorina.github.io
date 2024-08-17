@@ -76,18 +76,22 @@ img {
 }
 
 #right {
-    width: 49%;
+    width: 50%;
     float: right;
 }
 
 #left{
-    width: 49%;
+    width: 50%;
     float: left;
 }
 
-.parent {
-    width: 100%; /* Đảm bảo phần tử cha có đủ không gian */
-    background-color: #D3D3D3; /* Có thể giữ hoặc thay đổi theo nhu cầu */
-    padding: 20px; /* Có thể điều chỉnh theo nhu cầu */
-    box-sizing: border-box; /* Bao gồm padding và border vào chiều rộng */
+.clear { 
+    clear: both 
+}
+
+.container {
+   width: 100%;
+   border: 1px solid #333;
+   padding: 20px;
+   border-radius: 5px;
 }
