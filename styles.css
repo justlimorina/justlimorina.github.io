@@ -78,6 +78,11 @@ img {
     max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử chứa */
 }
 
+footer {
+    text-align: center;
+    font-family: 'Bahnschrift Light', sans-serif;
+}
+
 #right {
     width: 49%;
     float: right;
