@@ -49,7 +49,7 @@ h1 {
     font-family: 'Bahnschrift', sans-serif;
     background-color: #0A3161; /* Màu đen cho nền */
     color: white; /* Màu trắng cho chữ */
-    padding: 20px;
+    padding: 10px;
     border-radius: 5px; /* Optional: làm tròn góc của div */
     width: 100%; /* Đảm bảo h1 kéo dài toàn bộ chiều rộng */
     box-sizing: border-box; /* Bao gồm padding và border vào chiều rộng */
