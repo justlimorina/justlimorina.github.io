@@ -63,6 +63,7 @@ div {
     font-family: 'Bahnschrift Light', sans-serif;
     width: 100%; /* Đảm bảo div kéo dài toàn bộ chiều rộng */
     background-color: #fa6969; 
+    padding: 20px;
     color: black; /* Màu chữ để có sự tương phản tốt với nền */
     border-radius: 5px; /* Optional: làm tròn góc của div */
     box-sizing: border-box; /* Bao gồm padding và border vào chiều rộng */
