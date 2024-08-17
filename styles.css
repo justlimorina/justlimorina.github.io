@@ -74,3 +74,13 @@ img {
     border-radius: 5px; /* Optional: làm tròn góc của div */
     max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử chứa */
 }
+
+#right {
+    width: 49%;
+    float: right;
+}
+
+#left{
+    width: 49%;
+    float: left;
+}
