@@ -62,7 +62,7 @@ h2, h3, h4, h5, h6 {
 div {
     font-family: 'Bahnschrift Light', sans-serif;
     width: 100%; /* Đảm bảo div kéo dài toàn bộ chiều rộng */
-    background-color: #D3D3D3; /* Màu xám nhạt */
+    background-color: #fa6969; 
     color: black; /* Màu chữ để có sự tương phản tốt với nền */
     padding: 20px; /* Padding để tạo khoảng cách giữa nội dung và viền của div */
     border-radius: 5px; /* Optional: làm tròn góc của div */
@@ -78,11 +78,13 @@ img {
 #right {
     width: 50%;
     float: right;
+    background-color: #9e9e9e;
 }
 
 #left{
     width: 50%;
     float: left;
+    background-color: #9e9e9e;
 }
 
 .clear { 
