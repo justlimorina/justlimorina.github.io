@@ -76,13 +76,13 @@ img {
 }
 
 #right {
-    width: 50%;
+    width: 49%;
     float: right;
     background-color: #9e9e9e;
 }
 
 #left{
-    width: 50%;
+    width: 49%;
     float: left;
     background-color: #9e9e9e;
 }
