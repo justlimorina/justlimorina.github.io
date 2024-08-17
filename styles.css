@@ -35,6 +35,7 @@
 .navbar a:hover {
     background-color: #ddd; /* Màu nền khi di chuột qua */
     color: black; /* Màu chữ khi di chuột qua */
+    border-radius: 5px;
 }
 
 .navbar a:visited {
