@@ -88,12 +88,14 @@ footer {
     width: 49%;
     float: right;
     background-color: #fa6969;
+    display: flex;
 }
 
 #left{
     width: 49%;
     float: left;
     background-color: #fa6969;
+    display: flex;
 }
 
 .clear { 
