@@ -98,13 +98,15 @@ footer {
     float: right;
     min-height: 200px;
     background-color: #fa6969;
+    margin-bottom: 20px; /* khoảng cách dưới giữa các dòng */
 }
 
 #left {
     width: 49%;
     float: left;
-    background-color: #fa6969;
     min-height: 200px;
+    background-color: #fa6969;
+    margin-bottom: 20px; /* khoảng cách dưới giữa các dòng */
 }
 
 .clear { 
