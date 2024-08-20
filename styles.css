@@ -13,37 +13,54 @@
     src: local('Bahnschrift SemiBold');
 }
 
-.navbar {
-    background-color: #B22234; /* Màu đỏ của lá cờ Hoa Kỳ */
+header {
+    background-color: #B22234;
     overflow: hidden;
-    padding: 5px 0; /* Giảm padding trên và dưới để làm hẹp chiều cao */
-    border-radius: 5px; /* Optional: làm tròn góc của navbar */
-    width: 100%; /* Đảm bảo navbar kéo dài toàn bộ chiều rộng */
-    box-sizing: border-box; /* Bao gồm padding và border vào chiều rộng */
+    padding: 5px 0;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.brand a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI Variable Static Display', sans-serif;
+    padding: 5px 15px;
+    font-size: 1.5em; /* Điều chỉnh kích thước chữ nếu cần */
+}
+
+.navbar {
+    background-color: transparent; /* Giữ nguyên màu nền của header */
+    display: flex;
+    justify-content: flex-end; /* Đẩy các link của navbar sang phải */
+    align-items: center;
 }
 
 .navbar a {
-    float: left;
     display: block;
     color: white;
     text-align: center;
-    padding: 5px 15px; /* Giảm padding trên và dưới của các liên kết */
+    padding: 5px 15px;
     text-decoration: none;
-    font-family: 'Bahnschrift SemiBold', sans-serif;
+    font-family: 'Segoe UI Variable Static Display', sans-serif;
 }
 
 .navbar a:hover {
-    background-color: #ddd; /* Màu nền khi di chuột qua */
-    color: black; /* Màu chữ khi di chuột qua */
-    border-radius: 5px;
+    color: white;
+    font-family: 'Segoe UI Variable Static Display', sans-serif;
+    text-decoration: underline;
 }
 
 .navbar a:visited {
-    color: white; /* Màu chữ của liên kết đã được truy cập */
+    color: white;
 }
 
 .navbar a:active {
-    color: yellow; /* Màu chữ khi liên kết đang được nhấp */
+    color: yellow; 
 }
 
 h1 {
