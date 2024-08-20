@@ -1,16 +1,6 @@
 @font-face {
-    font-family: 'Bahnschrift';
-    src: local('Bahnschrift');
-}
-
-@font-face {
-    font-family: 'Bahnschrift Light';
-    src: local('Bahnschrift Light');
-}
-
-@font-face {
-    font-family: 'Bahnschrift SemiBold';
-    src: local('Bahnschrift SemiBold');
+    font-family: 'Segoe UI Variable Static Display';
+    src: url("http://justlimorina.github.io/font/Segoe-UI-Variable-Static-Display.ttf");
 }
 
 header {
@@ -30,13 +20,13 @@ header {
     text-decoration: none;
     font-family: 'Segoe UI Variable Static Display', sans-serif;
     padding: 5px 15px;
-    font-size: 1.5em; /* Điều chỉnh kích thước chữ nếu cần */
+    font-size: 1.5em;
 }
 
 .navbar {
-    background-color: transparent; /* Giữ nguyên màu nền của header */
+    background-color: transparent;
     display: flex;
-    justify-content: flex-end; /* Đẩy các link của navbar sang phải */
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -64,41 +54,41 @@ header {
 }
 
 h1 {
-    font-family: 'Bahnschrift', sans-serif;
-    background-color: #0A3161; /* Màu đen cho nền */
-    color: white; /* Màu trắng cho chữ */
+    font-family: 'Segoe UI Variable Static Display', sans-serif;
+    background-color: #0A3161;
+    color: white;
     padding: 20px;
-    border-radius: 5px; /* Optional: làm tròn góc của div */
-    width: 100%; /* Đảm bảo h1 kéo dài toàn bộ chiều rộng */
-    box-sizing: border-box; /* Bao gồm padding và border vào chiều rộng */
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 h2, h3, h4, h5, h6 {
-    font-family: 'Bahnschrift SemiBold', sans-serif;
+    font-family: 'Segoe UI Variable Static Display', sans-serif;
 }
 
 p {
-    font-family: 'Bahnschrift Light', sans-serif;
+    font-family: 'Segoe UI Variable Static Display', sans-serif;
 }
 
 div {
-    font-family: 'Bahnschrift Light', sans-serif;
-    width: 100%; /* Đảm bảo div kéo dài toàn bộ chiều rộng */ 
+    font-family: 'Segoe UI Variable Static Display', sans-serif;
+    width: 100%;
     padding: 20px;
-    color: black; /* Màu chữ để có sự tương phản tốt với nền */
-    border-radius: 5px; /* Optional: làm tròn góc của div */
-    box-sizing: border-box; /* Bao gồm padding và border vào chiều rộng */
+    color: black;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 img {
-    margin: 0 auto; /* Căn giữa hình ảnh */
-    border-radius: 5px; /* Optional: làm tròn góc của div */
-    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử chứa */
+    margin: 0 auto;
+    border-radius: 5px;
+    max-width: 100%;
 }
 
 footer {
     text-align: center;
-    font-family: 'Bahnschrift Light', sans-serif;
+    font-family: 'Segoe UI Variable Static Display', sans-serif;
 }
 
 #right {
@@ -107,7 +97,7 @@ footer {
     background-color: #fa6969;
 }
 
-#left{
+#left {
     width: 49%;
     float: left;
     background-color: #fa6969;
@@ -118,8 +108,8 @@ footer {
 }
 
 .container {
-   width: 100%;
-   border: 1px solid #333;
-   padding: 20px;
-   border-radius: 5px;
+    width: 100%;
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 5px;
 }
