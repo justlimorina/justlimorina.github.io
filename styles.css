@@ -55,12 +55,14 @@ header {
 
 h1 {
     font-family: 'Segoe UI Variable Static Display', sans-serif;
-    background-color: #0A3161;
-    color: white;
-    padding: 20px;
+    background-color: #0A3161; 
+    color: white; 
+    padding: 10px;
     border-radius: 5px;
     width: 100%;
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    text-align: center;
+    font-weight: normal;
 }
 
 h2, h3, h4, h5, h6 {
