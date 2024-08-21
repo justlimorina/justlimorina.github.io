@@ -121,3 +121,10 @@ footer {
     padding: 20px;
     border-radius: 5px;
 }
+@media screen and (max-width: 768px) {
+    #box {
+        width: 100%; 
+        float: none; 
+        margin-bottom: 20px;
+    }
+}
