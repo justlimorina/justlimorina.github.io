@@ -95,20 +95,12 @@ footer {
     font-size: 13px;
 }
 
-#right {
+#box {
     width: 49.5%;
     float: right;
-    min-height: 200px;
+    min-height: 250px;
     background-color: #fa6969;
-    margin-bottom: 20px;
-}
-
-#left {
-    width: 49.5%;
-    float: left;
-    min-height: 200px;
-    background-color: #fa6969;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* khoảng cách dưới giữa các dòng */
 }
 
 .clear { 
