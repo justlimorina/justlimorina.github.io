@@ -1,9 +1,6 @@
 @font-face {
-    font-family: 'Montserrat';
-    src: url('https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD-w.woff2') format('woff2'),
-         url('https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF3gnD-w.woff') format('woff');
-    font-weight: 100 900;
-    font-style: normal;
+    font-family: 'Segoe UI Variable Static Display';
+    src: url("http://justlimorina.github.io/font/Segoe UI Variable Display/Segoe-UI-Variable-Static-Display.ttf");
 }
 
 
