@@ -20,7 +20,7 @@ header {
 .brand a {
     color: white;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Segoe UI Variable Static Display', sans-serif;
     padding: 5px 15px;
     font-size: 1.5em;
 }
@@ -38,12 +38,12 @@ header {
     text-align: center;
     padding: 5px 15px;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Segoe UI Variable Static Display', sans-serif;
 }
 
 .navbar a:hover {
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Segoe UI Variable Static Display', sans-serif;
     text-decoration: underline;
 }
 
@@ -56,7 +56,7 @@ header {
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Segoe UI Variable Static Display', sans-serif;
     background-color: #0A3161; 
     color: white; 
     padding: 20px;
@@ -68,15 +68,15 @@ h1 {
 }
 
 h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Segoe UI Variable Static Display', sans-serif;
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Segoe UI Variable Static Display', sans-serif;
 }
 
 div {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Segoe UI Variable Static Display', sans-serif;
     width: 100%;
     padding: 20px;
     color: black;
@@ -93,7 +93,7 @@ img {
 
 footer {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Segoe UI Variable Static Display', sans-serif;
     font-size: 13px;
 }
 
