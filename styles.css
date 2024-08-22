@@ -7,13 +7,14 @@
 header {
     background-color: #B22234;
     overflow: hidden;
-    padding: 5px 0;
+    padding: 0;
     border-radius: 5px;
     width: 100%;
     box-sizing: border-box;
     display: flex; 
     justify-content: space-between; 
-    align-items: center;
+    align-items: left;
+    position: relative;
 }
 
 .brand a {
