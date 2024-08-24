@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found</title>
     <style>
+        @font-face {
+            font-family: 'Segoe UI Variable Static Display';
+            src: url('http://justlimorina.github.io/font/Segoe%20UI%20Variable%20Display/Segoe-UI-Variable-Static-Display.ttf') format('truetype'), local('Segoe UI Variable Display'), local('Segoe UI Variable');
+            font-weight: normal;
+            font-style: normal;
+        }
         body {
             font-family: 'Segoe UI Variable Static Display', sans-serif;
-            text-align: center;
             background-color: #f8f8f8;
             color: #333;
             margin: 0;
@@ -16,27 +21,43 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            flex-direction: column;
+            flex-direction: row;
+            overflow: hidden;
         }
-        h1 {
+        .content {
+            max-width: 60%;
+            text-align: left;
+        }
+        .content h1 {
             font-size: 3em;
+            margin: 0;
         }
-        p {
+        .content p {
             font-size: 1.2em;
+            margin: 0;
         }
-        a {
+        .content a {
             color: #B22234;
             text-decoration: none;
         }
-        a:hover {
+        .content a:hover {
             text-decoration: underline;
+        }
+        .image {
+            max-width: 20%;
+            height: auto;
+            margin-right: 20px;
         }
     </style>
 </head>
 <body>
-    <img src="http://justlimorina.github.io/image/Sticker_PPG_01_March_7th_13.png" alt="Stelle Sticker (Harmony)" style="float:right;width:300px;height:300px;">
-    <h1>Oops... There is something wrong.</h1>
-    <p>The path you are trying to access is deleted or does not exist, because I don't want to create it, or I hate this path.</p>
-    <p><a href="/index.html">So, please go back to the homepage.</a></p>
+    <div class="image">
+        <img src="/image/Sticker_PPG_01_March_7th_13.png" alt="Stelle Sticker (Harmony)" style="width:100%; height:auto;">
+    </div>
+    <div class="content">
+        <h1>Oops... There is something wrong.</h1>
+        <p>The path you are trying to access is deleted or does not exist, because I don't want to create it, or I hate this path.</p>
+        <p><a href="/index.html">So, please go back to the homepage.</a></p>
+    </div>
 </body>
 </html>
