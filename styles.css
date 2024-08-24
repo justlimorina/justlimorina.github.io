@@ -28,7 +28,7 @@ header {
 }
 
 header h1 {
-    font-size: 20px;
+    font-size: 16px;
     margin: 0;
     font-weight: normal;
 }
@@ -104,7 +104,7 @@ nav ul li a:hover {
     border-radius: 5px;
     box-sizing: border-box;
     padding: 5px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 img {
