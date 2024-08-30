@@ -167,6 +167,9 @@ header h1 {
         width: 100%;
         margin-bottom: 20px;
     }
+    body {
+        padding: 20px;
+    }
 }
 
 .box-header {
