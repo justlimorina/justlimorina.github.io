@@ -9,11 +9,11 @@ body {
     font-family: 'Segoe UI Variable Static Display', sans-serif;
     margin: 0;
     padding: 30px;
-    background-image: url("/image/windows-10-tech-pre-2-wallpaper.png"); 
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-position: center; 
+    background-image: url("0sokq9bmx3761.png"); /* Đường dẫn đến hình ảnh nền */
+    background-size: cover; /* Kích thước hình ảnh phủ toàn bộ màn hình */
+    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+    background-attachment: fixed; /* Cố định hình nền khi cuộn trang */
+    background-position: center; /* Căn giữa hình nền */
 }
 
 .header-navbar-container {
@@ -30,6 +30,7 @@ header {
     border-radius: 5px;
     flex-grow: 1;
     margin-right: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng mờ */
 }
 
 header h1 {
@@ -38,7 +39,46 @@ header h1 {
     font-weight: normal;
 }
 
-nav {
+.topnav-bar {
+    overflow: hidden;
+    background-color: #B22234;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng mờ */
+    margin-bottom: 10px;
+}
+
+.topnav-bar a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav-bar a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav-bar a:hover {
+    background-color: #7a1c24;
+    box-shadow: 0 4px 8px rgba(75, 75, 75, 0.512); /* Thêm hiệu ứng mờ */
+}
+
+.topnav-bar .active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+#myLinks {
+    display: none;
+}
+
+.navbar {
     background-color: #B22234;
     color: white;
     padding: 15px;
@@ -46,20 +86,21 @@ nav {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng mờ */
 }
 
-nav ul {
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-nav ul li {
+.navbar ul li {
     margin-right: 20px;
 }
 
-nav ul li a {
+.navbar ul li a {
     color: white;
     text-decoration: none;
     padding: 5px 10px;
@@ -67,8 +108,9 @@ nav ul li a {
     transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
+.navbar ul li a:hover {
     background-color: #7a1c24;
+    box-shadow: 0 4px 8px rgba(75, 75, 75, 0.512); /* Thêm hiệu ứng mờ */
 }
 
 .box-container {
@@ -119,6 +161,7 @@ nav ul li a:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.625); /* Tăng độ mờ khi hover */
     transition: box-shadow 0.3s ease;
 }
+
 @media (max-width: 768px) {
     .box {
         width: 100%;
@@ -132,8 +175,9 @@ nav ul li a:hover {
     margin-bottom: 10px;
     border-radius: 5px;
     box-sizing: border-box;
-    padding: 5px;
-    font-size: 25px;
+    padding: 20px 0 20px 0;
+    font-size: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng mờ */
 }
 
 img {
