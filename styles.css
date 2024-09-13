@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Segoe UI Variable Static Display';
-    src: url('/font/Segoe%20UI%20Variable%20Display/Segoe-UI-Variable-Static-Display.ttf') format('truetype'), local('Segoe UI Variable Display'), local('Segoe UI Variable');
+    src: url("/font/Segoe%20UI%20Variable%20Display/Segoe-UI-Variable-Static-Display.ttf") format('truetype'), local('Segoe UI Variable Display'), local('Segoe UI Variable');
     font-weight: normal;
     font-style: normal;
 }
