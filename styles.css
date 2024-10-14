@@ -9,11 +9,6 @@ body {
     font-family: 'Segoe UI Variable Static Display', sans-serif;
     margin: 0;
     padding: 30px;
-    background-image: url("/image/windows-10-tech-pre-2-wallpaper.png"); /* Đường dẫn đến hình ảnh nền */
-    background-size: cover; /* Kích thước hình ảnh phủ toàn bộ màn hình */
-    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
-    background-attachment: fixed; /* Cố định hình nền khi cuộn trang */
-    background-position: center; /* Căn giữa hình nền */
 }
 
 .header-navbar-container {
