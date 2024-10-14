@@ -136,7 +136,7 @@ header h1 {
 }
 
 .box img {
-    float: left;
+    float: right;
     max-width: 150px;
     max-height: 150px;
     margin-right: 20px;
