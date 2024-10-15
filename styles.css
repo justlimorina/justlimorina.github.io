@@ -58,6 +58,7 @@ header h1 {
     position: fixed;
     top: 0;
     right: 0;
+    filter: brightness(50%);
     background-image: url("https://limorina.id.vn/image/windows-10-tech-pre-2-wallpaper.png");
     background-size: cover;
     background-repeat: no-repeat;
