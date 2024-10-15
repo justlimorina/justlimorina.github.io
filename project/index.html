@@ -13,16 +13,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="topnav-bar">
-        <a href="/">Limorina's Personal Page</a>
-        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+    <div class="topnav">
+        <a href="#home">Limorina's Personal Page</a>
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
             <i class="fa fa-bars"></i>
         </a>
-        <div id="myLinks">
-            <a href="/project">Projects</a>
-            <a href="/document">Documents</a>
-            <a href="/image">Images</a>
-        </div>
+    </div>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="/index.html">Home</a>
+        <a href="/document/">Document</a>
+        <a href="/image/">Image</a>
+        <a href="/project/">Project</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Return to the page</a>
     </div>
     
     <div class="box-header">
