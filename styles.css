@@ -159,12 +159,12 @@ header h1 {
 .box-header {
     background-color: #3C3B6E;
     color: white;
+    margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
     box-sizing: border-box;
     padding: 20px 0 20px 0;
     font-size: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng mờ */
 }
 
 img {
