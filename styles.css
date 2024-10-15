@@ -34,78 +34,62 @@ header h1 {
     font-weight: normal;
 }
 
-.topnav-bar {
+.topnav {
     overflow: hidden;
-    background-color: #B22234;
-    position: relative;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng mờ */
-    margin-bottom: 10px;
+    background-color: #B22234;
+    padding: 14px 16px;
 }
 
-.topnav-bar a {
+.topnav a {
+    float: left;
     color: white;
-    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    display: block;
 }
 
-.topnav-bar a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
+.topnav a.icon {
+    float: right;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
     top: 0;
+    right: 0;
+    background-image: url("https://limorina.id.vn/image/windows-10-tech-pre-2-wallpaper.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
 }
 
-.topnav-bar a:hover {
-    background-color: #7a1c24;
-    box-shadow: 0 4px 8px rgba(75, 75, 75, 0.512); /* Thêm hiệu ứng mờ */
-}
-
-.topnav-bar .active {
-    background-color: #04AA6D;
-    color: white;
-}
-
-#myLinks {
-    display: none;
-}
-
-.navbar {
-    background-color: #B22234;
-    color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng mờ */
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.navbar ul li {
-    margin-right: 20px;
-}
-
-.navbar ul li a {
-    color: white;
+.sidebar a {
+    padding: 10px 15px;
     text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    font-size: 15px;
+    color: white;
+    display: block;
+    transition: 0.3s;
 }
 
-.navbar ul li a:hover {
-    background-color: #7a1c24;
-    box-shadow: 0 4px 8px rgba(75, 75, 75, 0.512); /* Thêm hiệu ứng mờ */
+.sidebar a:hover {
+    background-color: white;
+    color: black;
+}
+
+.sidebar .closebtn {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: block;
+    transition: 0.3s;
 }
 
 .box-container {
