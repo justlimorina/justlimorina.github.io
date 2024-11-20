@@ -64,10 +64,10 @@ header h1 {
     background-attachment: fixed;
     background-position: center; */
 /*     filter: brightness(50%);
-    color: #ffffff;
+    color: #ffffff; */
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 50px; */
+    padding-top: 50px; 
 }
 
 .sidebar a {
