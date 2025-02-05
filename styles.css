@@ -12,29 +12,6 @@ body {
     background-color:#48429B
 }
 
-.header-navbar-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-header {
-    background-color: #B22234;
-    color: white;
-    text-align: left;
-    padding: 15px;
-    border-radius: 5px;
-    flex-grow: 1;
-    margin-right: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng mờ */
-}
-
-header h1 {
-    font-size: 16px;
-    margin: 0;
-    font-weight: normal;
-}
-
 .topnav {
     overflow: hidden;
     border-radius: 5px;
@@ -77,7 +54,6 @@ header h1 {
 
 .sidebar a:hover {
     background-color: #202134;
-    color: black;
 }
 
 .sidebar .closebtn {
