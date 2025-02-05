@@ -8,7 +8,8 @@
 body {
     font-family: 'Segoe UI Variable Static Display', sans-serif;
     margin: 0;
-    padding: 30px;
+    padding: 20px;
+    background-color:#48429B
 }
 
 .header-navbar-container {
@@ -37,11 +38,12 @@ header h1 {
 .topnav {
     overflow: hidden;
     border-radius: 5px;
-    background-color: #D8A902;
+    background-color: #202134;
     padding: 14px 16px;
 }
 
 .topnav a {
+    text-align: center;
     float: left;
     color: white;
     text-decoration: none;
@@ -100,8 +102,10 @@ header h1 {
 }
 
 .box {
+    color: white;
     width: 49.5%;
-      border-style: solid;
+    background-color:#7F64AD;
+      border-style: none;
       border-width: 0.5px;
       margin-top: 10px;
     margin-bottom: 10px;
@@ -114,7 +118,7 @@ header h1 {
 .box:hover {
       border-style: none;
       color: white;
-      background-color: black;
+      background-color: #714C64;
       transition: 0.3s ease;
   }
   
@@ -158,7 +162,7 @@ header h1 {
 }
 
 .box-header {
-    background-color: #ECC402;
+    background-color: #202134;
     color: white;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -179,7 +183,7 @@ img {
   text-align: center;
   font-size: 13px;
   font-family: 'Segoe UI Variable Static Display', sans-serif;
-  background-color: #B17303;
+  background-color: #202134;
   color: white;
   padding: 1px;
   border-radius: 5px;
