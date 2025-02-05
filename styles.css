@@ -60,13 +60,7 @@ header h1 {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: black;
-/*     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; */
-/*     filter: brightness(50%);
-    color: #ffffff; */
+    background-color: #B4C1E7;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 50px; 
@@ -82,7 +76,7 @@ header h1 {
 }
 
 .sidebar a:hover {
-    background-color: white;
+    background-color: #202134;
     color: black;
 }
 
