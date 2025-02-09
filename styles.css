@@ -77,8 +77,8 @@ body {
     background-color:#7F64AD;
       border-style: none;
       border-width: 0.5px;
-/*       margin-top: 10px;
-    margin-bottom: 10px; */
+     margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
     box-sizing: border-box;
       transition: 0.3s ease;
@@ -108,8 +108,8 @@ body {
     background-color:#7F64AD;
       border-style: none;
       border-width: 0.5px;
-      margin-top: 10px;
-    margin-bottom: 10px;
+/*       margin-top: 10px;
+    margin-bottom: 10px; */
     border-radius: 5px;
     box-sizing: border-box;
       transition: 0.3s ease;
