@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 381 430"
+   width="381"
+   height="430"
+   version="1.1"
+   id="svg9"
+   sodipodi:docname="magnolia-logo (Copy).svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:bx="https://boxy-svg.com">
+  <sodipodi:namedview
+     id="namedview9"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.168"
+     inkscape:cx="190.92466"
+     inkscape:cy="214.89726"
+     inkscape:window-width="1536"
+     inkscape:window-height="795"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg9" />
+  <defs
+     id="defs1">
+    <path
+       id="hex-shape"
+       d="m 232.7,40 q 17.3,-10 34.6,0 l 155.9,90 q 17.3,10 17.3,30 v 180 q 0,20 -17.3,30 l -155.9,90 q -17.3,10 -34.6,0 L 76.8,370 Q 59.5,360 59.5,340 V 160 q 0,-20 17.3,-30 z" />
+    <clipPath
+       id="hex-clip">
+      <path
+         d="m 232.7,40 q 17.3,-10 34.6,0 l 155.9,90 q 17.3,10 17.3,30 v 180 q 0,20 -17.3,30 l -155.9,90 q -17.3,10 -34.6,0 L 76.8,370 Q 59.5,360 59.5,340 V 160 q 0,-20 17.3,-30 z"
+         id="path1" />
+    </clipPath>
+    <filter
+       id="petal-shadow"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feDropShadow
+         dx="3"
+         dy="8"
+         stdDeviation="5"
+         flood-color="#091226"
+         flood-opacity="0.45" />
+    </filter>
+    <ellipse
+       id="petal"
+       cx="0"
+       cy="-92"
+       rx="55"
+       ry="98" />
+    <bx:export>
+      <bx:file
+         format="svg" />
+      <bx:file
+         format="html" />
+    </bx:export>
+  </defs>
+  <path
+     d="m 173.2,5 q 17.3,-10 34.6,0 l 155.9,90 q 17.3,10 17.3,30 v 180 q 0,20 -17.3,30 l -155.9,90 q -17.3,10 -34.6,0 L 17.3,335 Q 0,325 0,305 V 125 Q 0,105 17.3,95 Z"
+     fill="#1e325c"
+     id="path2" />
+  <g
+     clip-path="url(#hex-clip)"
+     id="g2"
+     transform="translate(-59.5,-35)">
+    <polygon
+       points="160,380 660,880 760,780 260,100 120,260 "
+       fill="#142446"
+       id="polygon2" />
+  </g>
+  <g
+     id="flower-group"
+     transform="translate(-59.5,-35)">
+    <ellipse
+       cx="0"
+       cy="-92"
+       rx="55"
+       ry="98"
+       transform="matrix(-0.85000002,0,0,-0.85000002,250,260)"
+       fill="#4cb3c4"
+       filter="url(#petal-shadow)"
+       id="ellipse2" />
+    <ellipse
+       cx="0"
+       cy="-92"
+       rx="55"
+       ry="98"
+       transform="matrix(-0.67411911,-0.56565309,0.56565309,-0.67411911,250,260)"
+       fill="#4cb3c4"
+       filter="url(#petal-shadow)"
+       id="ellipse3" />
+    <ellipse
+       cx="0"
+       cy="-92"
+       rx="55"
+       ry="98"
+       transform="matrix(-0.67411911,0.56565309,-0.56565309,-0.67411911,250,260)"
+       fill="#4cb3c4"
+       filter="url(#petal-shadow)"
+       id="ellipse4" />
+    <ellipse
+       cy="-92"
+       rx="50.599998"
+       ry="90.160004"
+       transform="rotate(-95.000013,247.49508,11.778599)"
+       fill="#f1919d"
+       filter="url(#petal-shadow)"
+       id="ellipse5"
+       cx="0" />
+    <ellipse
+       cy="-92"
+       rx="50.599998"
+       ry="90.160004"
+       transform="rotate(95.000013,2.5048456,240.86134)"
+       fill="#f1919d"
+       filter="url(#petal-shadow)"
+       id="ellipse6"
+       cx="0" />
+    <ellipse
+       cx="0"
+       cy="-92"
+       rx="55"
+       ry="98"
+       transform="matrix(0.59103504,-0.75649035,0.75649035,0.59103504,250,260)"
+       fill="#4cb3c4"
+       filter="url(#petal-shadow)"
+       id="ellipse7" />
+    <ellipse
+       cx="0"
+       cy="-92"
+       rx="55"
+       ry="98"
+       transform="matrix(0.59103504,0.75649035,-0.75649035,0.59103504,250,260)"
+       fill="#4cb3c4"
+       filter="url(#petal-shadow)"
+       id="ellipse8" />
+    <ellipse
+       cy="173.548"
+       rx="51.682999"
+       ry="92.089996"
+       fill="#f1919d"
+       filter="url(#petal-shadow)"
+       cx="250"
+       id="ellipse9" />
+  </g>
+</svg>
