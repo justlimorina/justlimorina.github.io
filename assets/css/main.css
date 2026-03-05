@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: 'Adwaita Mono';
-    src: url("../fonts/adwaita/adwaita-mono/AdwaitaMono-Regular.ttf") format('truetype'), local('Adwaita Mono'), local('Adwaita Monos');
+    src: url("../fonts/adwaita/adwaita-mono/AdwaitaMono-Regular.ttf") format('truetype'), local('Adwaita Mono'), local('Adwaita Mono');
     font-weight: normal;
     font-style: normal;
 }
@@ -70,7 +70,7 @@ body{
 .img-header {
   width: 100%;
   height: 400px;
-  background-image: url('../images/astral-express-honkai-star-rail-thumb.jpg');
+  background-image: url('../images/magnolia-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
