@@ -298,7 +298,7 @@ img {
 
 /*MOBILE RESPONSIVE*/
 
-@media (max-width: 900px) {
+@media (max-width: 946px) {
     .textline::after{
         font-size: 35px;
         padding: 0px;
