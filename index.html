@@ -1,124 +1,249 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="shortcut icon" type="image/png" href="assets/images/magnolia-logo.svg"/>
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/magnolia-logo.svg">
-        <link rel="icon" type="image/png" sizes="192x192" href="assets/images/magnolia-logo.svg">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/magnolia-logo.svg">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/magnolia-logo.svg">
-        <title>Limorina's Personal Page</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/css/main.css">
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-    </head>
-    <body>
-        <div class="header">
-            <button class="openbtn" onclick="openNav()" aria-label="Open Menu">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Limorina's Personal Page</title>
+    <meta name="description"
+        content="Personal page of Limorina — an IT student from Hanoi, Vietnam. Exploring web development, Linux, and game development.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/magnolia-m3.svg">
+    <link rel="apple-touch-icon" href="assets/images/magnolia-m3.svg">
+
+    <!-- Google Fonts: Roboto + Material Symbols -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!-- ============================================================
+         SCRIM OVERLAY (M3 Modal Drawer backdrop)
+    ============================================================ -->
+    <div class="md-scrim" id="drawerScrim" aria-hidden="true"></div>
+
+    <!-- ============================================================
+         M3 NAVIGATION DRAWER
+    ============================================================ -->
+    <nav class="md-nav-drawer" id="navDrawer" aria-label="Site navigation" aria-modal="true" role="dialog">
+        <div class="md-nav-drawer__header">
+            <button class="md-icon-button" id="closeDrawerBtn" aria-label="Close navigation" onclick="closeNav()">
+                <span class="material-symbols-outlined">menu_open</span>
+            </button>
+            <span style="font-size:16px; font-weight:500; color:var(--md-sys-color-on-surface); margin-left:4px;">
+                Limorina's Page
+            </span>
+        </div>
+
+        <hr class="md-divider">
+
+        <div class="md-nav-drawer__content">
+            <p class="md-nav-drawer__headline">Navigation</p>
+
+            <a href="index.html" class="md-nav-item active" id="nav-home" aria-current="page">
+                <span class="material-icons md-nav-item__icon">home</span>
+                <span class="md-nav-item__label">Home</span>
+            </a>
+
+            <a href="documents" class="md-nav-item" id="nav-documents">
+                <span class="material-icons md-nav-item__icon">description</span>
+                <span class="md-nav-item__label">Documents</span>
+            </a>
+
+            <a href="privacy.html" class="md-nav-item" id="nav-privacy">
+                <span class="material-icons md-nav-item__icon">privacy_tip</span>
+                <span class="md-nav-item__label">Privacy Policy</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+         M3 TOP APP BAR — Center-aligned variant
+    ============================================================ -->
+    <header class="md-top-app-bar" id="topAppBar">
+        <div class="md-top-app-bar__leading">
+            <button class="md-icon-button" id="openDrawerBtn" aria-label="Open navigation" onclick="openNav()">
                 <span class="material-icons">menu</span>
             </button>
-            <div id="mySidebar" class="sidebar">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                <a href="index.html"><span class="material-icons sidebar-icon">home</span>Home</a>
-                <a href="documents"><span class="material-icons sidebar-icon">description</span>Documents</a>
-                <a href="privacy.html"><span class="material-icons sidebar-icon">privacy_tip</span>Privacy Policy</a>
-            </div>
-            <a href="index.html">Limorina's Personal Page</a>
-        </div>
-        <div class="img-header-holder">
-            <div class="img-header"></div>
-            <div class="caption">
-                <p class = "textline"></p>
-                <p class = "pretextline"></p>
-            </div>
         </div>
 
-        <div class="containers">
-            <div class="box-large">
-                <div class="box-content">
-                    <div class="box-text">
-                        <a style="font-size: 20px; font-weight: bold">
-                            <span class="material-icons box-icon">lightbulb</span>
-                            Hello...
-                        </a>
-                        Hello, everyone! If you are reading this, first of all, congratulations! You have stumbled upon my little corner of the internet. However, I must warn you in advance—there isn’t much to see here just yet.
-                        <br>This website is primarily a practice project for me, a place where I experiment with web development, coding techniques, and different design ideas. Because of that, you might not find any finalized content or structured information at the moment. It’s more of a work in progress, a digital sandbox where I try out new things and improve my skills.
-                        <br>That being said, I do have plans for this website! While there’s nothing substantial right now, I intend to update it in the near future. So if you happen to check back later, you might just find something interesting. Until then, feel free to look around, but don’t expect too much just yet!
-                        <br>Thanks for stopping by, and I hope to share something exciting with you soon!
-                    </div>
-                    <div class="box-image">
-                        <img src="https://limorina.id.vn/assets/images/Sticker_PPG_20_Aglaea_04.png" alt="Aglaea">
-                    </div>
-                </div>
-            </div>
+        <a href="index.html" class="md-top-app-bar__title">Limorina</a>
 
-            <div class="box">
-                <div class="box-content">
-                    <div class="box-text">
-                        <a style="font-size: 20px; font-weight: bold">
-                            <span class="material-icons box-icon">person</span>
-                            So, who am I?
-                        </a>
-                        Well, I am just a university student studying information technology, living in Hanoi, Vietnam. My favorite activities are researching, especially fictions and playing games.
-                    </div>
-                    <div class="box-image">
-                        <img src="assets/images/Sticker_PPG_14_Stelle_01.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box-content">
-                    <div class="box-text">
-                        <a style="font-size: 20px; font-weight: bold">
-                            <span class="material-icons box-icon">add_circle_outline</span>
-                            What will I add to this website?
-                        </a>
-                        This website will be served as my dump blog and I may add the information of my own product, including some programs and my world building. I want to create a anime-based game, or even a Linux distro. Since I have no experience, I need to learn before I could change the world.
-                    </div>
-                    <div class="box-image">
-                        <img src="assets/images/Sticker_PPG_15_Firefly_01.png" alt="(giving you heart)">
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box-content">
-                    <div class="box-text">
-                        <a style="font-size: 20px; font-weight: bold">
-                            <span class="material-icons box-icon">folder</span>
-                            My project
-                        </a>
-                        Here are my upcoming project(s), I will provide to you later.
-                        <ul>
-                            <li><span class="material-icons box-list-icon">computer</span>Magnolia Linux (Comming soon)</li>
-                        </ul>
-                    </div>
-                    <div class="box-image">
-                        <img src="assets/images/magnolia-logo.svg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box-content">
-                    <div class="box-text">
-                        <a style="font-size: 20px; font-weight: bold">
-                            <span class="material-icons box-icon">contact_mail</span>
-                            How to contact me?
-                        </a>
-                        Since this website is archived by GitHub, I cannot add any sensitive contact information, so that you can only see me at this website. However, I promise to add contact information as soon as possible.
-                    </div>
-                    <div class="box-image">
-                        <img src="assets/images/Sticker_PPG_13_Acheron_01.png" alt="">
-                    </div>
-                </div>
-            </div>
+        <div class="md-top-app-bar__trailing">
+            <button class="md-icon-button" id="themeToggleBtn" aria-label="Toggle dark mode">
+                <span class="material-icons">dark_mode</span>
+            </button>
         </div>
-        <script src="assets/js/main.js" async defer></script>
+    </header>
 
-        <footer class="footer">
-            <p>&copy; 2024 - <span id="year"></span> All rights reserved</p>
-        </footer>
-    </body>
+    <!-- ============================================================
+         HERO SECTION
+    ============================================================ -->
+    <section class="md-hero" aria-label="Hero banner">
+        <img class="md-hero__image" src="assets/images/magnolia-bg.jpg" alt="Magnolia background" loading="eager">
+        <div class="md-hero__overlay"></div>
+        <div class="md-hero__content">
+            <p class="md-hero__eyebrow">Acheron</p>
+            <h1 class="md-hero__title">
+                Lone voyagers in the cosmos are driven by two desires — to tread in the trails of the past and to forge
+                their own way.
+            </h1>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         MAIN CONTENT
+    ============================================================ -->
+    <main class="md-main" id="main">
+
+        <!-- Hero / Welcome card (full-width) -->
+        <div class="md-card-grid md-card-grid--full" style="margin-bottom: 12px;">
+            <article class="md-card" id="card-hello">
+                <div class="md-card__body">
+                    <div class="md-card__text">
+                        <div class="md-card__title-row">
+                            <span class="material-icons">lightbulb</span>
+                            <span class="md-card__title">Hello...</span>
+                        </div>
+                        <p class="md-card__supporting-text">
+                            Hello, everyone! If you are reading this, first of all, congratulations! You have stumbled
+                            upon my little corner of the internet. However, I must warn you in advance—there isn't much
+                            to see here just yet.
+                        </p>
+                        <p class="md-card__supporting-text">
+                            This website is primarily a practice project for me, a place where I experiment with web
+                            development, coding techniques, and different design ideas. Because of that, you might not
+                            find any finalized content or structured information at the moment. It's more of a work in
+                            progress, a digital sandbox where I try out new things and improve my skills.
+                        </p>
+                        <p class="md-card__supporting-text">
+                            That being said, I do have plans for this website! While there's nothing substantial right
+                            now, I intend to update it in the near future. So if you happen to check back later, you
+                            might just find something interesting. Until then, feel free to look around, but don't
+                            expect too much just yet!
+                        </p>
+                        <p class="md-card__supporting-text">
+                            Thanks for stopping by, and I hope to share something exciting with you soon!
+                        </p>
+                    </div>
+                    <div class="md-card__media">
+                        <img src="https://limorina.id.vn/assets/images/Sticker_PPG_20_Aglaea_04.png"
+                            alt="Aglaea sticker" loading="lazy">
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Two-column card grid -->
+        <div class="md-card-grid">
+
+            <article class="md-card" id="card-about">
+                <div class="md-card__body">
+                    <div class="md-card__text">
+                        <div class="md-card__title-row">
+                            <span class="material-icons">person</span>
+                            <span class="md-card__title">So, who am I?</span>
+                        </div>
+                        <p class="md-card__supporting-text">
+                            Well, I am just a university student studying information technology, living in Hanoi,
+                            Vietnam. My favorite activities are researching, especially fictions and playing games.
+                        </p>
+                    </div>
+                    <div class="md-card__media">
+                        <img src="assets/images/Sticker_PPG_14_Stelle_01.png" alt="Stelle sticker" loading="lazy">
+                    </div>
+                </div>
+            </article>
+
+            <article class="md-card" id="card-plans">
+                <div class="md-card__body">
+                    <div class="md-card__text">
+                        <div class="md-card__title-row">
+                            <span class="material-icons">add_circle_outline</span>
+                            <span class="md-card__title">What will I add here?</span>
+                        </div>
+                        <p class="md-card__supporting-text">
+                            This website will be served as my dump blog and I may add the information of my own product,
+                            including some programs and my world building. I want to create an anime-based game, or even
+                            a Linux distro. Since I have no experience, I need to learn before I could change the world.
+                        </p>
+                    </div>
+                    <div class="md-card__media">
+                        <img src="assets/images/Sticker_PPG_15_Firefly_01.png" alt="Firefly sticker (giving you heart)"
+                            loading="lazy">
+                    </div>
+                </div>
+            </article>
+
+            <article class="md-card" id="card-projects">
+                <div class="md-card__body">
+                    <div class="md-card__text">
+                        <div class="md-card__title-row">
+                            <span class="material-icons">folder</span>
+                            <span class="md-card__title">My projects</span>
+                        </div>
+                        <p class="md-card__supporting-text">
+                            Here are my upcoming project(s). More details will follow soon!
+                        </p>
+                        <div class="md-card__supporting-text">
+                            <ul>
+                                <li>
+                                    <span class="material-icons">computer</span>
+                                    Magnolia Linux <em>(Coming soon)</em>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md-card__media">
+                        <img src="assets/images/magnolia-logo.svg" alt="Magnolia Linux logo" loading="lazy">
+                    </div>
+                </div>
+            </article>
+
+            <article class="md-card" id="card-contact">
+                <div class="md-card__body">
+                    <div class="md-card__text">
+                        <div class="md-card__title-row">
+                            <span class="material-icons">contact_mail</span>
+                            <span class="md-card__title">How to contact me?</span>
+                        </div>
+                        <p class="md-card__supporting-text">
+                            Since this website is hosted on GitHub, I cannot add any sensitive contact information, so
+                            that you can only see me at this website. However, I promise to add contact information as
+                            soon as possible.
+                        </p>
+                    </div>
+                    <div class="md-card__media">
+                        <img src="assets/images/Sticker_PPG_13_Acheron_01.png" alt="Acheron sticker" loading="lazy">
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- ============================================================
+         FOOTER
+    ============================================================ -->
+    <footer class="md-footer">
+        <p>&copy; 2024 – <span id="year"></span> Limorina · All rights reserved ·
+            <a href="privacy.html">Privacy Policy</a>
+        </p>
+    </footer>
+
+    <!-- JS -->
+    <script src="assets/js/main.js" defer></script>
+</body>
+
 </html>

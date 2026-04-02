@@ -1,50 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Found</title>
-    <style>
-        @font-face {
-            font-family: 'Adwaita Sans';
-            src: url("assets/fonts/adwaita/adwaita-sans/AdwaitaSans-Regular.ttf") format('truetype'), local('Adwaita Sans'), local('Adwaita Sans');
-            font-weight: normal;
-            font-style: normal;
-        }
-        body {
-            font-family: 'Adwaita Sans', Arial, sans-serif;
-            background-color: #ffffff;
-            color: #5f6368;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            padding: 100px 20px;
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: left;
-        }
-        .error-message {
-            font-size: 24px;
-            margin: 20px 0;
-        }
-        .suggestion {
-            font-size: 16px;
-            color: #757575;
-        }
-        img {
-            width: 25%;
-            height: auto;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>404 - Page Not Found | Limorina</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/magnolia-m3.svg">
+    <link rel="apple-touch-icon" href="assets/images/magnolia-m3.svg">
+
+    <!-- Google Fonts: Roboto + Material Symbols -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <div class="container">
-        <img src="assets/images/Sticker_PPG_01_March_7th_13.png" alt="lmao">
-        <div class="error-message">Oops... There is something wrong.</div>
-        <div class="suggestion">The path you are trying to access is deleted or does not exist. I am so sorry for this inconvenience.</div>
-        <div class="suggestion"><a href="/index.html">Please go back to the homepage.</a></div>
-    </div>
+
+    <!-- Scrim -->
+    <div class="md-scrim" id="drawerScrim" aria-hidden="true"></div>
+
+    <!-- M3 Navigation Drawer -->
+    <nav class="md-nav-drawer" id="navDrawer" aria-label="Site navigation" aria-modal="true" role="dialog">
+        <div class="md-nav-drawer__header">
+            <button class="md-icon-button" id="closeDrawerBtn" aria-label="Close navigation" onclick="closeNav()">
+                <span class="material-symbols-outlined">menu_open</span>
+            </button>
+            <span style="font-size:16px; font-weight:500; color:var(--md-sys-color-on-surface); margin-left:4px;">
+                Limorina
+            </span>
+        </div>
+        <hr class="md-divider">
+        <div class="md-nav-drawer__content">
+            <a href="index.html" class="md-nav-item">
+                <span class="material-icons md-nav-item__icon">home</span>
+                <span class="md-nav-item__label">Home</span>
+            </a>
+            <a href="privacy.html" class="md-nav-item">
+                <span class="material-icons md-nav-item__icon">privacy_tip</span>
+                <span class="md-nav-item__label">Privacy Policy</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- M3 Top App Bar -->
+    <header class="md-top-app-bar" id="topAppBar">
+        <div class="md-top-app-bar__leading">
+            <button class="md-icon-button" id="openDrawerBtn" aria-label="Open navigation" onclick="openNav()">
+                <span class="material-icons">menu</span>
+            </button>
+        </div>
+        <a href="index.html" class="md-top-app-bar__title">Limorina</a>
+        <div class="md-top-app-bar__trailing">
+            <button class="md-icon-button" id="themeToggleBtn" aria-label="Toggle dark mode">
+                <span class="material-icons">dark_mode</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page content -->
+    <main class="md-main" id="main" style="display: flex; align-items: center; justify-content: center; min-height: 70vh;">
+        <div style="text-align: center; max-width: 400px; animation: md-fade-up 0.8s var(--md-sys-motion-easing-emphasized);">
+            <div style="font-size: 120px; font-weight: 300; color: var(--md-sys-color-primary); margin-bottom: 16px;">404</div>
+            <h1 class="md-typescale-headline-large" style="margin-bottom: 12px;">Oops! Page not found.</h1>
+            <p class="md-typescale-body-large" style="color: var(--md-sys-color-on-surface-variant); margin-bottom: 32px;">
+                The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+            </p>
+            <a href="index.html" style="
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                background-color: var(--md-sys-color-primary);
+                color: var(--md-sys-color-on-primary);
+                padding: 0 24px;
+                height: 40px;
+                border-radius: 20px;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 14px;
+                box-shadow: var(--md-sys-elevation-level1);
+                transition: box-shadow 0.2s;
+            ">
+                <span class="material-icons" style="font-size: 18px;">home</span>
+                Back Home
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="md-footer">
+        <p>&copy; 2024 – <span id="year"></span> Limorina · All rights reserved</p>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
 </body>
 </html>
-
