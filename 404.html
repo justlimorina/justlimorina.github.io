@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 
@@ -29,41 +29,82 @@
     <!-- Scrim -->
     <div class="md-scrim" id="drawerScrim" aria-hidden="true"></div>
 
+    <!-- M3 Navigation Rail (Desktop) -->
+    <aside class="md-nav-rail" id="navRail">
+        <div class="md-nav-rail__top">
+            <a href="index.html" class="md-nav-rail__logo-wrapper" aria-label="Limorina's Personal Page">
+                <img src="assets/images/logo-black.svg" class="md-logo md-logo--light" alt="Limorina Logo">
+                <img src="assets/images/logo-white.svg" class="md-logo md-logo--dark" alt="Limorina Logo">
+            </a>
+        </div>
+
+        <div class="md-nav-rail__destinations">
+            <a href="index.html" class="md-rail-item" id="rail-home">
+                <div class="md-rail-item__icon-container">
+                    <md-ripple></md-ripple>
+                    <md-icon class="md-rail-item__icon">home</md-icon>
+                </div>
+                <span class="md-rail-item__label">Home</span>
+            </a>
+
+            <a href="documents" class="md-rail-item" id="rail-documents">
+                <div class="md-rail-item__icon-container">
+                    <md-ripple></md-ripple>
+                    <md-icon class="md-rail-item__icon">description</md-icon>
+                </div>
+                <span class="md-rail-item__label">Documents</span>
+            </a>
+
+        </div>
+
+        <div class="md-nav-rail__bottom">
+            <md-icon-button id="railThemeToggleBtn" aria-label="Toggle dark mode">
+                <md-icon>dark_mode</md-icon>
+            </md-icon-button>
+        </div>
+    </aside>
+
     <!-- M3 Navigation Drawer -->
     <nav class="md-nav-drawer" id="navDrawer" aria-label="Site navigation" aria-modal="true" role="dialog">
         <div class="md-nav-drawer__header">
-            <button class="md-icon-button" id="closeDrawerBtn" aria-label="Close navigation" onclick="closeNav()">
-                <span class="material-symbols-outlined">menu_open</span>
-            </button>
+            <md-icon-button id="closeDrawerBtn" aria-label="Close navigation" onclick="closeNav()">
+                <md-icon>menu_open</md-icon>
+            </md-icon-button>
             <span style="font-size:16px; font-weight:500; color:var(--md-sys-color-on-surface); margin-left:4px;">
                 Limorina's Personal Page
             </span>
         </div>
-        <hr class="md-divider">
+        <md-divider></md-divider>
         <div class="md-nav-drawer__content">
-            <a href="index.html" class="md-nav-item">
-                <span class="material-icons md-nav-item__icon">home</span>
-                <span class="md-nav-item__label">Home</span>
-            </a>
-            <a href="privacy.html" class="md-nav-item">
-                <span class="material-icons md-nav-item__icon">privacy_tip</span>
-                <span class="md-nav-item__label">Privacy Policy</span>
-            </a>
+            <md-list class="md-nav-drawer__list">
+                <md-list-item type="link" href="index.html" class="md-nav-item">
+                    <md-icon slot="start">home</md-icon>
+                    <div slot="headline">Home</div>
+                </md-list-item>
+            </md-list>
         </div>
     </nav>
 
     <!-- M3 Top App Bar -->
     <header class="md-top-app-bar" id="topAppBar">
         <div class="md-top-app-bar__leading">
-            <button class="md-icon-button" id="openDrawerBtn" aria-label="Open navigation" onclick="openNav()">
-                <span class="material-icons">menu</span>
-            </button>
+            <md-icon-button id="openDrawerBtn" aria-label="Open navigation" onclick="openNav()">
+                <md-icon>menu</md-icon>
+            </md-icon-button>
         </div>
-        <a href="index.html" class="md-top-app-bar__title">Limorina's Personal Page</a>
+
+        <div class="md-top-app-bar__title-container">
+            <a href="index.html" class="md-top-app-bar__logo-link">
+                <img src="assets/images/logo-black.svg" class="md-logo md-logo--light" alt="Limorina Logo">
+                <img src="assets/images/logo-white.svg" class="md-logo md-logo--dark" alt="Limorina Logo">
+            </a>
+            <a href="index.html" class="md-top-app-bar__title">Limorina's Personal Page</a>
+        </div>
+
         <div class="md-top-app-bar__trailing">
-            <button class="md-icon-button" id="themeToggleBtn" aria-label="Toggle dark mode">
-                <span class="material-icons">dark_mode</span>
-            </button>
+            <md-icon-button id="themeToggleBtn" aria-label="Toggle dark mode">
+                <md-icon>dark_mode</md-icon>
+            </md-icon-button>
         </div>
     </header>
 
@@ -80,24 +121,10 @@
                 The page you are looking for might have been removed, had its name changed, or is temporarily
                 unavailable.
             </p>
-            <a href="index.html" style="
-                display: inline-flex;
-                align-items: center;
-                gap: 8px;
-                background-color: var(--md-sys-color-primary);
-                color: var(--md-sys-color-on-primary);
-                padding: 0 24px;
-                height: 40px;
-                border-radius: 20px;
-                text-decoration: none;
-                font-weight: 500;
-                font-size: 14px;
-                box-shadow: var(--md-sys-elevation-level1);
-                transition: box-shadow 0.2s;
-            ">
-                <span class="material-icons" style="font-size: 18px;">home</span>
+            <md-filled-button href="index.html">
+                <md-icon slot="icon">home</md-icon>
                 Back Home
-            </a>
+            </md-filled-button>
         </div>
     </main>
 
@@ -106,7 +133,7 @@
         <p>&copy; 2024 – <span id="year"></span> Limorina · All rights reserved</p>
     </footer>
 
-    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/main.js" type="module"></script>
 </body>
 
 </html>

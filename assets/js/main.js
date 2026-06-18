@@ -1,9 +1,10 @@
 /* ============================================================
    main.js — Limorina's Personal Page
-   M3 Navigation Drawer + utilities
+   M3 Navigation Drawer + Dynamic color calculations + utilities
    ============================================================ */
 
-'use strict';
+import { argbFromHex, themeFromSourceColor, applyTheme } from 'https://esm.run/@material/material-color-utilities';
+import 'https://esm.run/@material/web/all.js';
 
 // ---- Year -------------------------------------------------------
 const yearEl = document.getElementById('year');
@@ -14,22 +15,28 @@ const navDrawer  = document.getElementById('navDrawer');
 const scrim      = document.getElementById('drawerScrim');
 
 // ---- Open / Close -----------------------------------------------
-function openNav() {
+export function openNav() {
     if (!navDrawer || !scrim) return;
     navDrawer.classList.add('is-open');
     scrim.classList.add('is-visible');
     navDrawer.removeAttribute('aria-hidden');
-    // Trap focus inside drawer
-    document.body.style.overflow = 'hidden';
+    // Lock scrolling on mobile viewports when drawer is open
+    if (window.innerWidth < 1200) {
+        document.body.style.overflow = 'hidden';
+    }
 }
 
-function closeNav() {
+export function closeNav() {
     if (!navDrawer || !scrim) return;
     navDrawer.classList.remove('is-open');
     scrim.classList.remove('is-visible');
     navDrawer.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
 }
+
+// Make drawer methods global for inline onclick handlers
+window.openNav = openNav;
+window.closeNav = closeNav;
 
 // Close drawer when clicking scrim
 if (scrim) {
@@ -40,6 +47,15 @@ if (scrim) {
 document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && navDrawer && navDrawer.classList.contains('is-open')) {
         closeNav();
+    }
+});
+
+// Reset scroll override on resize if screen becomes desktop
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 1200) {
+        document.body.style.overflow = '';
+    } else if (navDrawer && navDrawer.classList.contains('is-open')) {
+        document.body.style.overflow = 'hidden';
     }
 });
 
@@ -56,57 +72,56 @@ if (topAppBar) {
     }, { passive: true });
 }
 
-// ---- Theme Management -------------------------------------------
-const themeToggleBtn = document.getElementById('themeToggleBtn');
-const body = document.body;
+// ---- Dynamic Theme Management (seed: #DC143C) ------------------
+const sourceColor = argbFromHex('#DC143C');
+const theme = themeFromSourceColor(sourceColor);
 
-// Check for saved theme or system preference
-const savedTheme = localStorage.getItem('theme');
-const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+let isDark = localStorage.getItem('theme') === 'dark' || 
+             (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
 
-if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
-    body.classList.add('dark-theme');
-    updateThemeIcon(true);
-}
-
-function updateThemeIcon(isDark) {
-    if (!themeToggleBtn) return;
-    const icon = themeToggleBtn.querySelector('.material-icons');
-    if (icon) {
-        icon.textContent = isDark ? 'light_mode' : 'dark_mode';
+function updateTheme() {
+    // Apply theme dynamic color properties to documentElement
+    applyTheme(theme, { target: document.documentElement, dark: isDark });
+    
+    // Toggle dark-theme class on body
+    if (isDark) {
+        document.body.classList.add('dark-theme');
+    } else {
+        document.body.classList.remove('dark-theme');
     }
+    
+    // Update switch icon text content
+    const updateIcon = (btnId) => {
+        const btn = document.getElementById(btnId);
+        if (btn) {
+            const icon = btn.querySelector('.material-icons') || btn.querySelector('md-icon');
+            if (icon) {
+                icon.textContent = isDark ? 'light_mode' : 'dark_mode';
+            }
+        }
+    };
+    updateIcon('themeToggleBtn');
+    updateIcon('railThemeToggleBtn');
 }
 
+// Perform initial dynamic theme render
+updateTheme();
+
+// Handle theme toggle button events
+const themeToggleBtn = document.getElementById('themeToggleBtn');
 if (themeToggleBtn) {
     themeToggleBtn.addEventListener('click', () => {
-        const isDark = body.classList.toggle('dark-theme');
+        isDark = !isDark;
         localStorage.setItem('theme', isDark ? 'dark' : 'light');
-        updateThemeIcon(isDark);
+        updateTheme();
     });
 }
 
-// ---- M3 Ripple effect on Cards ----------------------------------
-function createRipple(event) {
-    const card = event.currentTarget;
-    const existingRipple = card.querySelector('.md-ripple');
-    if (existingRipple) existingRipple.remove();
-
-    const circle   = document.createElement('span');
-    const diameter = Math.max(card.clientWidth, card.clientHeight);
-    const radius   = diameter / 2;
-
-    const rect = card.getBoundingClientRect();
-    circle.style.width  = circle.style.height = `${diameter}px`;
-    circle.style.left   = `${event.clientX - rect.left - radius}px`;
-    circle.style.top    = `${event.clientY - rect.top  - radius}px`;
-    circle.classList.add('md-ripple');
-
-    card.appendChild(circle);
-    circle.addEventListener('animationend', () => circle.remove());
+const railThemeToggleBtn = document.getElementById('railThemeToggleBtn');
+if (railThemeToggleBtn) {
+    railThemeToggleBtn.addEventListener('click', () => {
+        isDark = !isDark;
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        updateTheme();
+    });
 }
-
-document.querySelectorAll('.md-card').forEach(card => {
-    card.style.position = 'relative';
-    card.style.overflow = 'hidden';
-    card.addEventListener('click', createRipple);
-});
